@@ -1,0 +1,42 @@
+<!-- <h1>{{displayValue3}}</h1>
+<h2>{{displayValue4}}</h2>
+<h3>{{displayValue5}}</h3>
+<h3>{{displayValue7}}</h3>
+<h3>{{displayValue8}}</h3>
+<h3>{{displayValue11}}</h3>
+<h3>{{displayValue13}}</h3> -->
+<form [formGroup]="formGroup">
+  <h2>Multiply</h2>
+  <label for="value1">value1</label>
+  <input type="text" name="value1" formControlName="value1" (change)="multiply()">
+  <br>
+  <label for="value2">value2</label>
+  <input type="text" name="value2" formControlName="value2" (change)="multiply()">
+  <h3><strong>result : </strong> {{result1}}</h3>
+  <h3><strong>result (toFixed({{fixed1}})) : </strong> {{result1Fixed}}</h3>
+  <hr>
+  <br>
+
+  <h2>Add</h2>
+  <label for="value3">value1</label>
+  <input type="text" name="value3" formControlName="value3" (change)="add()">
+  <br>
+  <label for="value4">value2</label>
+  <input type="text" name="value4" formControlName="value4" (change)="add()">
+  <h3><strong>result : </strong> {{result2}}</h3>
+  <h3><strong>result (toFixed({{fixed2}})) : </strong> {{result2Fixed}}</h3>
+  <hr>
+  <br>
+
+  <h2>Subtract</h2>
+  <label for="value5">value1</label>
+  <input type="text" name="value5" formControlName="value5" (change)="subtract()">
+  <br>
+  <label for="value6">value2</label>
+  <input type="text" name="value4" formControlName="value6" (change)="subtract()">
+  <h3><strong>result : </strong> {{result3}}</h3>
+  <h3><strong>result (toFixed({{fixed3}})) : </strong> {{result3Fixed}}</h3>
+  <hr>
+  <br>
+</form>
+<!-- <router-outlet></router-outlet> -->
